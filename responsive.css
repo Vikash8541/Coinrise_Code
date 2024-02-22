@@ -1,0 +1,85 @@
+/*========================= Media Queries Responsive work start================== */
+
+/*======== Tablet View ==================  */
+
+/* working on 1024 px something error*/
+@media (min-width:768px) and (max-width:1024px) {
+    .navbar-expand-lg .navbar-toggler{
+        padding-left: 0;
+        padding-right: 18px;
+    }
+    .navbar .navbar-nav{
+        align-items: start;
+        margin-top: 10px !important;
+    }
+    .navbar .search-form-box{
+        width: 100%;
+        margin: 20px 0;
+        padding-left: 0;
+    }
+    .navbar::after{
+        bottom: 0;
+    }
+    .footer-coinrise-2 .footer-nav-links-coinrise{
+        gap: 25px;
+    }
+    .footer-coinrise-2 .about-us-footer-text p{
+        max-width: 100%;
+        line-height: 30px;
+    }
+    .footer-coinrise-2 .ads-footer-image{
+        margin: 35px 0;
+    }
+}
+
+/*======== Mobile View =============*/
+@media (max-width:767px) {
+    .navbar .navbar-brand .logo{
+        width: 60px;
+    }
+    .navbar .navbar-brand .text-logo{
+        width: 100px;
+    }
+    .navbar-expand-lg .navbar-toggler{
+        padding-left: 0;
+        padding-right: 18px;
+    }
+    .navbar .navbar-nav{
+        align-items: start;
+        margin-top: 10px !important;
+    }
+    .navbar .search-form-box{
+        width: 100%;
+        margin: 20px 0;
+        padding-left: 0;
+    }
+    .navbar::after{
+        bottom: 0;
+    }
+    .footer-coinrise-1 .social-icon-logo-coinrise{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 0;
+        margin-top: 25px;
+    }
+    .footer-coinrise-2 .footer-nav-links-coinrise{
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+    .footer-coinrise-2 .about-us-footer-text h4{
+        margin-bottom: 5px;
+    }
+    .footer-coinrise-2 .about-us-footer-text p{
+        max-width: 100%;
+        line-height: 30px;
+    }
+    .footer-coinrise-2 .ads-footer-image{
+        margin: 35px 0;
+    }
+}
+
+
+
+/*================ Media Queries Responsive work end ============================= */
+
+
