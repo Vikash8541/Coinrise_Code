@@ -711,6 +711,80 @@ text-decoration: underline;
 
 /* =================== Financial News Work end ======================= */
 
+/* =================== Press Release Work start ======================= */
+.home-coinrise-press-release-sec{
+    background-color: #F4F4F4;
+    padding: 40px ;
+}
+.home-coinrise-press-release-sec .all-news-text > h5{
+    color: #101010;
+    font-size: 28px;
+    font-weight: 500;
+    font-family: "Inter";
+}
+.home-coinrise-press-release-sec .all-news-text > a{
+    color: #000000;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Inter";
+    border:  1px solid  #D9D9D9;
+    border-radius: 23px;
+    display: flex;
+    height: 46px;
+    width: 170px;
+    align-items: center;
+    justify-content: center;
+}
+.home-coinrise-press-release-sec .press-release-carousel-sec{
+margin: 30px auto;
+}
+.home-coinrise-press-release-sec .press-release-carousel-sec .bitcoin-news-image-box .img {
+    overflow: hidden;
+    border-radius: 10px;
+}
+.home-coinrise-press-release-sec .press-release-carousel-sec .bitcoin-news-image-box .img a img{
+    transform: scale(1);
+    transition: all 0.5s ease;
+    width: auto;
+}
+.home-coinrise-press-release-sec .press-release-carousel-sec .bitcoin-news-image-box:hover .img a img{
+    opacity: .9;
+    transform: scale(1.1);
+}
+.home-coinrise-press-release-sec .press-release-carousel-sec .bitcoin-news-image-box .bitcoin-image-text-box .news-bitcoin-box-text a{
+    font-size: 18px;
+}
+.home-coinrise-press-release-sec .press-release-carousel-sec .bitcoin-news-image-box:hover .news-bitcoin-box-text > a{
+    text-decoration: underline;
+}
+.home-coinrise-press-release-sec .press-release-carousel-sec .bitcoin-news-image-box .bitcoin-image-text-box{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 15px 0;
+}
+.home-coinrise-press-release-sec  .owl-carousel .owl-nav {
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    transform: translateY(-50%);
+}
+.home-coinrise-press-release-sec .owl-carousel .owl-nav button.owl-prev{
+    transform: translateX(-78px);
+}
+.home-coinrise-press-release-sec .owl-carousel .owl-nav button.owl-next{
+    transform: translateX(78px);
+}
+/* =================== Press Release Work end ======================= */
+
+
+
+
 
 /* =================== Footer Page work start ======================= */
 .footer-coinrise-1{
