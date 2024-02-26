@@ -811,57 +811,57 @@ margin: 30px auto;
 .in-depth-home-coinrise .in-depth-bitcoin-sec-box{
     margin: 35px auto;
 }
-.in-depth-home-coinrise .in-depth-bitcoin-sec-box .big-box-in-depth-sec{
+.in-depth-home-coinrise .in-depth-bitcoin-sec-box .box-in-depth-sec{
     position: relative;
     overflow: hidden;
     isolation: isolate;
     cursor: pointer;
-    height: 100%;
-    width: 100%;
 }
-.in-depth-home-coinrise .in-depth-bitcoin-sec-box .big-box-in-depth-sec .date-time-text-white{
+.in-depth-home-coinrise .in-depth-bitcoin-sec-box .box-in-depth-sec .date-time-text-white{
     position: absolute;
     right: 40px;
     top: 40px;
 }
-.in-depth-home-coinrise .in-depth-bitcoin-sec-box .big-box-in-depth-sec .big-image-in-depth{
+.in-depth-home-coinrise .in-depth-bitcoin-sec-box .box-in-depth-sec .image-in-depth{
     position: relative;
    overflow: hidden;
    border-radius: 10px;
    height: 100%;
    width: 100%;
 }
-.in-depth-home-coinrise .in-depth-bitcoin-sec-box .big-box-in-depth-sec .big-image-in-depth a img{
-    height: 580px;
+.in-depth-home-coinrise .in-depth-bitcoin-sec-box .box-in-depth-sec .image-in-depth a img{
+    height: 573px;
+    border-radius: 10px;
     transform: scale(1);
     transition: all 0.5s ease;
 }
-.in-depth-home-coinrise .in-depth-bitcoin-sec-box .big-box-in-depth-sec:hover .big-image-in-depth a img{
+.in-depth-home-coinrise .in-depth-bitcoin-sec-box .box-in-depth-sec:hover .image-in-depth a img{
     filter: brightness(140%);
     transform: scale(1.1);
 }
-.in-depth-home-coinrise .in-depth-bitcoin-sec-box .big-box-in-depth-sec:hover .text-in-depth-box .bottom-text-in-depth-box > a{
-text-decoration: underline;
-}
-.in-depth-home-coinrise .in-depth-bitcoin-sec-box .big-box-in-depth-sec .text-in-depth-box{
+
+.in-depth-home-coinrise .in-depth-bitcoin-sec-box .box-in-depth-sec .text-in-depth-box{
     position: absolute;
     bottom: 44px;
     left: 44px;
-}
-.in-depth-home-coinrise .in-depth-bitcoin-sec-box .big-box-in-depth-sec .text-in-depth-box .bottom-text-in-depth-box{
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
-.in-depth-home-coinrise .in-depth-bitcoin-sec-box .big-box-in-depth-sec .text-in-depth-box .bottom-text-in-depth-box > a{
+.in-depth-home-coinrise .in-depth-bitcoin-sec-box .box-in-depth-sec:hover .text-in-depth-box .bitcoin-heading-in-depth-text a{
+    text-decoration: underline;
+}
+.in-depth-home-coinrise .in-depth-bitcoin-sec-box .box-in-depth-sec .text-in-depth-box .bitcoin-heading-in-depth-text{
+    max-width: 80%;
+}
+.in-depth-home-coinrise .in-depth-bitcoin-sec-box .box-in-depth-sec .text-in-depth-box .bitcoin-heading-in-depth-text a{
     font-size: 34px;
     font-weight: 500;
     color: #fff;
     font-family: "Inter";
     line-height: 40px;
-    max-width: 80%;
 }
-.in-depth-home-coinrise .in-depth-bitcoin-sec-box .big-box-in-depth-sec .text-in-depth-box .bottom-text-in-depth-box > p{
+.in-depth-home-coinrise .in-depth-bitcoin-sec-box .box-in-depth-sec .text-in-depth-box > p{
     font-size: 18px;
     font-weight: 400;
     color: #fff;
@@ -869,68 +869,22 @@ text-decoration: underline;
     max-width: 80%;
 }
 /* Small box */
-.in-depth-home-coinrise .in-depth-bitcoin-sec-box .small-box-in-depth-sec{
-    height: 100%;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 30px;
+.in-depth-home-coinrise .in-depth-bitcoin-sec-box .small-box-in-depth{
+    height: 274px !important;
 }
-.in-depth-home-coinrise .in-depth-bitcoin-sec-box .small-box-in-depth-sec .small-boxes-in-depth{
-    position: relative;
-    overflow: hidden;
-    isolation: isolate;
-    height: 274px;
-    width: 100%;
-    cursor: pointer;
-}
-.in-depth-home-coinrise .in-depth-bitcoin-sec-box .small-box-in-depth-sec .small-boxes-in-depth .small-text-in-depth-box{
-    position: absolute;
-    left: 40px;
-    bottom: 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-.in-depth-home-coinrise .in-depth-bitcoin-sec-box .small-box-in-depth-sec .small-boxes-in-depth .small-text-in-depth-box > a{
-    font-size: 22px;
-    font-weight: 500;
-    color: #fff;
-    font-family: "Inter";
-    line-height: 32px;
-    max-width: 80%;
-}
-.in-depth-home-coinrise .in-depth-bitcoin-sec-box .small-box-in-depth-sec .small-boxes-in-depth .date-time-text-white{
-    position: absolute;
-    top: 40px;
-    right: 40px;
-}
-.in-depth-home-coinrise .in-depth-bitcoin-sec-box .small-box-in-depth-sec .small-boxes-in-depth .image-boxes-in-depth{
-    position: relative;
-   overflow: hidden;
-   border-radius: 10px;
-   height: 100%;
-   width: 100%;
-}
-.in-depth-home-coinrise .in-depth-bitcoin-sec-box .small-box-in-depth-sec .small-boxes-in-depth .image-boxes-in-depth a img{
-    transform: scale(1);
-    transition: all 0.5s ease;
-}
-.in-depth-home-coinrise .in-depth-bitcoin-sec-box .small-box-in-depth-sec .small-boxes-in-depth:hover .image-boxes-in-depth a img{
-    filter: brightness(140%);
-    transform: scale(1.1);
-}
-.in-depth-home-coinrise .in-depth-bitcoin-sec-box .small-box-in-depth-sec .small-boxes-in-depth:hover .small-text-in-depth-box > a{
-text-decoration: underline;
+.in-depth-home-coinrise .in-depth-bitcoin-sec-box .small-box-in-depth .small-box-image-in-depth a img{
+    height: auto !important;
+    width: 100% !important;
 }
 
-
-
-
-
+.in-depth-bitcoin-sec-box .box-in-depth-sec .small-text-in-depth-box .bitcoin-heading-in-depth-text > a{
+    font-size: 22px !important;
+    line-height: 30px !important;
+}
+.in-depth-bitcoin-sec-box .box-in-depth-sec .small-text-in-depth-box .bitcoin-heading-in-depth-text > a{
+    font-size: 22px !important;
+    line-height: 30px !important;
+}
 /* =================== In depth work end ======================= */
 
 
