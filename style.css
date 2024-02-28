@@ -98,15 +98,98 @@ img{
 }
 /* Global Data for All pages */
 
-
-/* =================== Header Page work start ======================= */
-header{
-    position: sticky;
-    z-index: 999 !important;
-    top: 0;
+/* ========== Add Mobile view marquee  ======================*/
+.mobile-view-tag-marquee{
     width: 100%;
-    height: auto;
+    height: 82px;
+    background-color: #411DF2;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 5.9%;
+    z-index: 1;
 }
+.mobile-view-tag-marquee .features-presales-marquees-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mobile-view-tag-marquee .features-presales-marquees-text p{
+    font-size: 15px;
+    font-weight: 400;
+    color: #FFFFFF;
+    font-family: "Inter";
+    line-height: 22px;
+    max-width: 40%;
+    text-align: center;
+    margin-left: 172px;
+}
+.mobile-view-tag-marquee .features-presales-marquees-text a{
+    color: #FFFFFF;
+    font-size: 14px;
+}
+/* ========== Add Mobile view marquee  ======================*/
+
+.search-mobile-btn-home{
+    display: none;
+    margin-left: 25px;
+}
+
+/* Add Extra */
+.in-depth-home-coinrise .in-depth-bitcoin-sec-box .box-in-depth-sec.small-box-in-depth .date-time-text-white{
+	top:35px;
+}
+.home-banner-coinrise-sec{
+	    margin-bottom: 85px;
+}
+.in-depth-home-coinrise{
+	padding-bottom:0;
+}
+.home-banner-coinrise-sec .home-banner-slider .home-banner-right-content-box, .home-banner-coinrise-sec .home-banner-slider .slider-box-home-banner{
+	height:710px;
+}
+.home-banner-coinrise-sec .home-banner-slider .home-banner-right-content-box{
+	justify-content:space-between;
+	align-items:center;
+}
+
+.mobile-view-tag-marquee{
+    width: 100%;
+    height: 82px;
+    background-color: #411DF2;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 5.9%;
+    z-index: 1;
+}
+.mobile-view-tag-marquee .features-presales-marquees-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mobile-view-tag-marquee .features-presales-marquees-text p{
+    font-size: 15px;
+    font-weight: 400;
+    color: #FFFFFF;
+    font-family: "Inter";
+    line-height: 22px;
+    max-width: 40%;
+    text-align: center;
+    margin-left: 172px;
+}
+.mobile-view-tag-marquee .features-presales-marquees-text a{
+    color: #FFFFFF;
+    font-size: 14px;
+}
+.search-mobile-btn-home{
+    display: none;
+    margin-left: 25px;
+}
+/* =================== Header Page work start ======================= */
+
 .navbar{
     position: relative;
     overflow: hidden;
@@ -130,7 +213,41 @@ header{
     width: 75px;
     height: auto;
 }
-
+.navbar .navbar-nav .menu-item:hover i{
+    transform: rotate(-180deg);
+}
+.navbar .toggle-icon-desktop-home{
+    cursor: pointer;
+}
+.navbar .search-form-box, .navbar .search-form-box input::placeholder{
+    transition: all 0.8s ease;
+}
+.navbar .navbar-nav .menu-item i{
+	transition: transform 0.5s ease;
+}
+.navbar .search-form-box:hover {
+    width: 22%;
+}
+.navbar .search-form-box:hover input::placeholder{
+    opacity:0;
+}
+/* ==== new add =====*/
+.navbar .navbar-brand .logo::before{
+    content: '';
+    position: absolute;
+    background: url(./images/Vector.png) no-repeat center;
+    background-size: cover;
+    height: 35%;
+    width: 40%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%) rotate(0deg);
+    z-index: 1;
+    transition: transform 0.8s ease;
+}
+.navbar .navbar-brand .logo:hover::before{
+    transform: translate(-50%, -40%) rotate(60deg);
+}
 .navbar .navbar-brand .text-logo{
     width: 120px;
     height: auto;
@@ -661,7 +778,6 @@ text-decoration: underline;
     font-weight: 500;
     font-family: "Inter";
 }
-
 .finance-news-home-page .all-news-text > a{
     color: #000000;
     font-size: 14px;
@@ -708,8 +824,8 @@ text-decoration: underline;
     font-family: "Inter";
 }
 
-
 /* =================== Financial News Work end ======================= */
+
 
 /* =================== Press Release Work start ======================= */
 .home-coinrise-press-release-sec{
@@ -885,8 +1001,8 @@ margin: 30px auto;
     font-size: 22px !important;
     line-height: 30px !important;
 }
-/* =================== In depth work end ======================= */
 
+/* =================== In depth work end ======================= */
 
 
 
@@ -975,3 +1091,5 @@ margin: 30px auto;
     letter-spacing: .1px;
 }
 /* =================== Footer Page work end ======================= */
+
+
