@@ -1,10 +1,56 @@
-/*========================= Media Queries Responsive work start================== */
+/* ================ Responsive of Home Landing Page ========================== */
+/* Responsive work start */
 
-/*======== Tablet View ==================  */
+/* ============== For Tablet work start ====================== */
 
-/* working on 1024 px something error*/
+@media(min-width:1024px) and (max-width:1200px){
+	.home-banner-coinrise-sec .home-banner-slider .slider-box-home-banner{
+		height:550px !important;
+	}
+	.navbar .navbar-nav li a{
+		    display: flex;
+    		align-items: center;
+    		justify-content: center;
+			font-size:12px;
+			gap: 3px !important; 
+	}
+	.navbar .navbar-nav{
+		align-items:center !important;
+		justify-content:center !important;
+		margin:0 !important;
+	}
+	#navbarSupportedContent{
+		align-items:center;
+		justify-content:space-around;
+	}
+	.navbar-toggler-icon{
+		display:none !important;
+	}
+	.navbar .toggle-icon-desktop-home{
+		display:block !important;
+		padding-left:11px !important;
+	}
+	.navbar .search-form-box{
+		width: 105px !important;
+	}
+}
+
 @media (min-width:768px) and (max-width:1024px) {
-    .navbar-expand-lg .navbar-toggler{
+	.mobile-view-tag-marquee{
+        display: flex;
+		top: 16.5%;
+    }
+	  .mobile-view-tag-marquee .features-presales-marquees-text p{
+        margin-left: 0;
+        width: 100%;
+        min-width: 65%;
+    	font-size: 17px;
+    	line-height: 28px;
+    }
+	.mobile-view-tag-marquee .features-presales-marquees-text a{
+        margin-bottom: 0;
+    }
+	    .navbar-expand-lg .navbar-toggler{
         padding-left: 0;
         padding-right: 18px;
     }
@@ -13,12 +59,11 @@
         margin-top: 10px !important;
     }
     .navbar .search-form-box{
-        width: 100%;
-        margin: 20px 0;
-        padding-left: 0;
+        display:none !important;
     }
     .navbar::after{
         bottom: 0;
+        background: none;
     }
     .footer-coinrise-2 .footer-nav-links-coinrise{
         gap: 25px;
@@ -30,11 +75,203 @@
     .footer-coinrise-2 .ads-footer-image{
         margin: 35px 0;
     }
+	
+    .navbar-expand-lg .navbar-toggler{
+        display: block;
+    }
+    .navbar-toggler-icon{
+        display: block;
+    }
+    .navbar .toggle-icon-desktop-home{
+        padding-left: 50px;
+        display: none;
+    }
+    .home-banner-coinrise-sec .home-banner-slider .slider-box-home-banner .slider-banner-text .slider-bottom-text{
+        padding: 10px 20px;
+        bottom: 70px;
+    }
+	.home-banner-coinrise-sec{
+	    margin-bottom: 0;
 }
-
-/*======== Mobile View =============*/
+    .home-banner-coinrise-sec .home-banner-slider .slider-box-home-banner .slider-banner-text .slider-bottom-text .bitcoin-message-text{
+        max-width: 100%;
+        font-size: 32px;
+    }
+    .home-banner-coinrise-sec .home-banner-slider .slider-box-home-banner .slider-banner-text .slider-bottom-text p{
+        font-size: 16px;
+    }
+    .home-banner-coinrise-sec .home-banner-slider .slider-box-home-banner .slider-button-home-banner{
+        bottom: 30px;
+    }
+    .home-banner-coinrise-sec .home-banner-slider .home-banner-right-content-box{
+        padding: 15px 12px;
+        align-items: center;
+        justify-content: space-between;
+        height: auto;
+    }
+    .home-banner-coinrise-sec .home-banner-right-content-box .right-content-home-box .right-banner-content-bitcoin-text{
+        font-size: 15px;
+        line-height: 22px;
+        max-width: 100%;
+    }
+    .home-banner-coinrise-sec .home-banner-slider .home-banner-right-content-box .right-content-home-box p{
+        font-size: 13px;
+        max-width: 100%;   
+    }
+    .home-banner-coinrise-sec .home-banner-slider .slider-box-home-banner .slider-banner-text .slider-up-text{
+        padding: 20px 23px;
+    }
+    .home-banner-coinrise-sec .home-banner-slider .home-banner-right-content-box .right-content-home-box{
+		padding-bottom: 25px;
+        margin-bottom: 27px;
+   		 border-bottom: 1px solid #363636;
+	}
+	 .home-banner-coinrise-sec .home-banner-slider .home-banner-right-content-box .right-content-home-box:last-child{
+		padding-bottom: 0;
+   		 border-bottom: none;
+	}
+    .home-features-presales-slider .features-presales-marquees-tag{
+        display: none;
+    }
+    .home-features-presales-slider .features-presales-boxes{
+        margin-top: 25px;
+    }
+    .home-features-presales-slider .features-presales-boxes .images-features-presales{
+        width: 100%;
+        height: 100%;
+    }
+	.home-features-presales-slider .features-presales-boxes .images-features-presales a img{
+		height:auto;
+	}
+    .home-features-presales-slider .features-presales-boxes{
+        margin-top: 0;
+        height: 368px;
+		flex-direction:column;
+    }
+    .home-features-presales-slider .features-presales-boxes .text-features-presales-box .text-features-presales{
+        max-width: 100%;
+        font-size: 18px;
+        line-height: 27px;
+		margin-top:18px;
+    }
+    .features-presales-boxes .features-presales-crypto-box{
+        left: 5%;
+    	top: auto;
+    	bottom: 38%;
+    }
+    .features-presales-boxes .text-features-presales-box{
+        width: 100%;
+		justify-content:center;
+		align-items:start;
+		height:100%;
+		padding-left:0;
+    }
+	.bitcoin-news-image-box .bitcoin-image-text-box .news-bitcoin-box-text a{
+        font-size: 16px !important;
+    }
+    .news-text-box-page .bitcoin-news-image-box .bitcoin-image-text-box .bitcoin-img-info-text h6, .financ-news-home-boxes .bitcoin-news-image-box .bitcoin-image-text-box .bitcoin-img-info-text h6, .financ-news-home-boxes .ads-finance-home-box .bitcoin-img-info-text h6{
+        max-width: 100%;
+        margin-bottom: 0;
+        font-size: 12px;
+    }
+    .trending-topics-home-page .trending-topic-boxes-main .trending-topic-box .trending-box-content span{
+        text-align: center; 
+    }
+    .news-text-box-page .bitcoin-news-image-box .bitcoin-image-text-box .news-bitcoin-box-text, .financ-news-home-boxes .bitcoin-news-image-box .bitcoin-image-text-box .news-bitcoin-box-text a, .in-depth-home-coinrise .in-depth-bitcoin-sec-box .box-in-depth-sec .text-in-depth-box .bitcoin-heading-in-depth-text,.bitcoin-message-text-dark-grey,.bitcoin-message-text-white{
+        max-width: 100%;
+    }
+    .finance-news-home-page .financ-news-home-boxes .ads-finance-home-box .ads-footer-image{
+        height: auto;
+    }
+    .home-coinrise-press-release-sec .owl-carousel .owl-nav{
+        top: auto;
+        bottom: -90px;
+        gap: 30px;
+        justify-content: center;
+    }
+    .home-coinrise-press-release-sec .owl-carousel .owl-nav button.owl-prev,.home-coinrise-press-release-sec .owl-carousel .owl-nav button.owl-next{
+        transform: none;
+    }
+    .home-coinrise-press-release-sec{
+        padding: 40px 0;
+		padding-bottom: 70px;
+    }
+    .news-text-box-page .bitcoin-news-image-box .bitcoin-image-text-box .news-bitcoin-box-text{
+        max-width: 100% !important;
+        font-size: 16px;
+        line-height: 26px;
+        }
+        .finance-news-home-page .bitcoin-news-image-box  .bitcoin-image-text-box .news-bitcoin-box-text{
+            max-width: 100% !important;
+        }
+        .in-depth-home-coinrise .in-depth-bitcoin-sec-box .box-in-depth-sec .text-in-depth-box{
+            left: 15px;
+            bottom: 30px;
+        }
+        .in-depth-home-coinrise .in-depth-bitcoin-sec-box .box-in-depth-sec{
+            margin-bottom: 25px;
+        }
+        .in-depth-home-coinrise .in-depth-bitcoin-sec-box .box-in-depth-sec .text-in-depth-box .bitcoin-heading-in-depth-text a{
+            font-size: 27px ;
+            line-height: 34px;
+        }
+        .in-depth-home-coinrise .in-depth-bitcoin-sec-box .box-in-depth-sec .text-in-depth-box .bitcoin-heading-in-depth-text{
+            max-width: 90%;
+        }
+        .in-depth-home-coinrise .in-depth-bitcoin-sec-box .box-in-depth-sec .text-in-depth-box > p{
+            max-width: 90%;
+            font-size: 16px;
+        }
+        .in-depth-home-coinrise .in-depth-bitcoin-sec-box .box-in-depth-sec .image-in-depth a img{
+            height: 570px;
+        }
+        .in-depth-home-coinrise .in-depth-bitcoin-sec-box .box-in-depth-sec .date-time-text-white{
+            right: 27px;
+            top: 27px;
+        }
+        .in-depth-home-coinrise .in-depth-bitcoin-sec-box .small-box-in-depth .small-box-image-in-depth a img{
+            height: 100% !important;
+        }
+        .in-depth-home-coinrise .in-depth-bitcoin-sec-box .small-box-in-depth .bitcoin-heading-in-depth-text{
+            max-width: 100% !important;
+        }
+        .in-depth-home-coinrise .in-depth-bitcoin-sec-box .small-box-in-depth .bitcoin-heading-in-depth-text > a{
+            font-size: 18px !important;
+            line-height: 28px !important;
+        }
+        .in-depth-home-coinrise .in-depth-bitcoin-sec-box .box-in-depth-sec.small-box-in-depth .date-time-text-white{
+            top: 24px;
+            right: 20px;
+        }
+        .in-depth-home-coinrise{
+            padding-bottom: 0;
+        }
+	.in-depth-home-coinrise .in-depth-bitcoin-sec-box .small-box-in-depth{
+            margin-bottom: 0;
+        }
+	.crypto-grey a, .crypto-white a{
+		width:75px;
+	}
+	.home-banner-coinrise-sec .home-banner-slider .slider-box-home-banner{
+		height:675px;
+	}
+}
+/* ============= For Mobile View ===========================*/
 @media (max-width:767px) {
-    .navbar .navbar-brand .logo{
+	.mobile-view-tag-marquee{
+        display: flex;
+    }
+	.mobile-view-tag-marquee .features-presales-marquees-text p{
+        margin-left: 0;
+        width: 100%;
+        min-width: 87%;
+        font-size: 11px;
+        line-height: 18px;
+    }
+	.mobile-view-tag-marquee .features-presales-marquees-text a{
+        margin-bottom: 50px;
+    }
+	.navbar .navbar-brand .logo{
         width: 60px;
     }
     .navbar .navbar-brand .text-logo{
@@ -49,12 +286,11 @@
         margin-top: 10px !important;
     }
     .navbar .search-form-box{
-        width: 100%;
-        margin: 20px 0;
-        padding-left: 0;
+        display: none !important;
     }
     .navbar::after{
         bottom: 0;
+        background: none;
     }
     .footer-coinrise-1 .social-icon-logo-coinrise{
         flex-wrap: wrap;
@@ -76,10 +312,236 @@
     .footer-coinrise-2 .ads-footer-image{
         margin: 35px 0;
     }
+	.navbar-expand-lg .navbar-toggler{
+        display: block;
+    }
+    .navbar-toggler-icon{
+        display: block;
+    }
+    .navbar .toggle-icon-desktop-home{
+        padding-left: 50px;
+        display: none;
+    }
+	.home-banner-coinrise-sec .home-banner-slider, .news-sec-home-page .news-text-box-page{
+		margin-top:0;
+	}
+	.in-depth-home-coinrise .in-depth-bitcoin-sec-box{
+		margin-bottom:0;
+	}
+	.home-banner-coinrise-sec{
+	    margin-bottom: 0;
+}
+    .home-banner-coinrise-sec .carousel-slider-home-banner{
+        margin-bottom: 30px;
+    }
+	.home-banner-coinrise-sec .home-banner-slider .slider-box-home-banner .slider-banner-text .slider-up-text{
+	padding: 40px 18px;
+	}
+	.home-banner-coinrise-sec .home-banner-slider .slider-box-home-banner{
+		height:540px;
+	}
+    .home-banner-coinrise-sec .home-banner-slider .slider-box-home-banner .slider-button-home-banner{
+        right: 25px;
+		bottom: 18px;
+    }
+    .home-banner-coinrise-sec .home-banner-slider .home-banner-right-content-box{
+        height: auto;
+    }
+    .home-banner-coinrise-sec .home-banner-slider .slider-box-home-banner .slider-banner-text .slider-bottom-text{
+        bottom: 70px;
+        padding: 10px 20px;
+		gap:10px;
+    }
+	.home-banner-coinrise-sec .home-banner-slider .home-banner-right-content-box .right-content-home-box{
+		padding-bottom: 30px;
+   		 border-bottom: 1px solid #363636;
+	}
+	 .home-banner-coinrise-sec .home-banner-slider .home-banner-right-content-box .right-content-home-box:last-child{
+		padding-bottom: 0;
+   		 border-bottom: none;
+	}
+    .home-banner-coinrise-sec .home-banner-slider .slider-box-home-banner .slider-banner-text .slider-bottom-text p{
+        font-size: 14px;
+    }
+    .home-banner-coinrise-sec .home-banner-slider .slider-box-home-banner .slider-banner-text .slider-bottom-text .bitcoin-message-text{
+        font-size: 24px;
+        line-height: 36px;
+        max-width: 100%;
+    }
+    .home-features-presales-slider .features-presales-boxes{
+        margin-top: 0;
+        height: 390px;
+		flex-direction:column;
+    }
+    .home-features-presales-slider .features-presales-boxes .images-features-presales{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .features-presales-boxes .features-presales-crypto-box{
+        left: 5%;
+    	top: auto;
+    	bottom: 33%;
+    }
+    .home-features-presales-slider{
+        padding-bottom: 30px;
+    }
+    .features-presales-boxes .text-features-presales-box{
+        width: 100%;
+		justify-content:center;
+		align-items:start;
+		height:80%;
+		padding-left:0;
+    }
+	.home-features-presales-slider .features-presales-heading-text{
+		font-size:26px;
+	}
+    .home-features-presales-slider .features-presales-boxes .text-features-presales-box .text-features-presales{
+        max-width: 80%;
+        font-size: 18px;
+        line-height: 27px;
+		margin-top:50px;
+    }
+	.home-features-presales-slider .features-presales-boxes .images-features-presales a img{
+		height:auto;
+	}
+    .home-features-presales-slider .carousel-handle-features-pre-sales .features-pre-caro .owl-nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        margin-top: 30px;
+        position: absolute;
+        top: -92px;
+        right: 0;
+    }
+    .home-banner-coinrise-sec .home-banner-slider .home-banner-right-content-box{
+        align-items: center;
+        justify-content: space-between;
+    }
+    .home-features-presales-slider .features-presales-marquees-tag{
+        display: none;
+    }
+    .news-text-box-page .bitcoin-news-image-box .img a img,.finance-news-home-page .financ-news-home-boxes .bitcoin-news-image-box .img a img{
+        width: 100%;
+    }
+    .news-text-box-page .bitcoin-news-image-box .bitcoin-image-text-box .news-bitcoin-box-text, .financ-news-home-boxes .bitcoin-news-image-box .bitcoin-image-text-box .news-bitcoin-box-text a, .in-depth-home-coinrise .in-depth-bitcoin-sec-box .box-in-depth-sec .text-in-depth-box .bitcoin-heading-in-depth-text,.bitcoin-message-text-dark-grey,.bitcoin-message-text-white{
+        max-width: 100%;
+    }
+    .news-text-box-page .bitcoin-news-image-box .bitcoin-image-text-box, .financ-news-home-boxes .bitcoin-news-image-box .bitcoin-image-text-box, .financ-news-home-boxes .ads-finance-home-box{
+        gap: 20px;
+    }
+	.news-text-box-page .all-news-text h5{
+		width:100%;
+		margin-bottom:0;
+	}
+    .trending-topics-home-page{
+        padding: 35px 0;
+    }
+	.trending-topics-home-page .trending-topic-boxes-main{
+		margin-bottom:0;
+	}
+    .trending-topics-home-page .trending-topic-boxes-main .trending-topic-box{
+        width: calc(100% / 2 - 20px);
+    }
+    .news-text-box-page .bitcoin-news-image-box, .financ-news-home-boxes .bitcoin-news-image-box{
+        margin-bottom: 30px;
+    }
+    .finance-news-home-page .all-news-text > h5, .home-coinrise-press-release-sec .all-news-text > h5,.in-depth-home-coinrise .all-news-text > h5{
+        font-size: 26px;
+        margin-bottom: 0;
+		width:100%;
+    }
+    .finance-news-home-page .financ-news-home-boxes .ads-finance-home-box .ads-footer-image{
+        height: 340px;
+    }
+    .home-coinrise-press-release-sec{
+        padding: 40px 0;
+		padding-bottom: 70px;
+    }
+    .home-coinrise-press-release-sec .owl-carousel .owl-nav{
+        top: auto;
+        bottom: -90px;
+        justify-content: center;
+    }
+    .home-coinrise-press-release-sec .owl-carousel .owl-nav button.owl-prev,.home-coinrise-press-release-sec .owl-carousel .owl-nav button.owl-next{
+        transform: none;
+    }
+	.home-coinrise-press-release-sec .press-release-carousel-sec .bitcoin-news-image-box .img a img{
+		width:100%;
+	}
+    .in-depth-home-coinrise .in-depth-bitcoin-sec-box .box-in-depth-sec .text-in-depth-box{
+        left: 27px;
+		bottom:27px;
+		max-width:90%;
+    }
+    .in-depth-home-coinrise .in-depth-bitcoin-sec-box .box-in-depth-sec{
+        margin-bottom: 28px;
+    }
+	.in-depth-home-coinrise .in-depth-bitcoin-sec-box .small-box-in-depth{
+		margin-bottom:0;
+	}
+    .in-depth-home-coinrise .in-depth-bitcoin-sec-box .box-in-depth-sec .text-in-depth-box .bitcoin-heading-in-depth-text a{
+        font-size: 21px !important;
+        line-height: 27px !important;
+    }
+    .in-depth-home-coinrise .in-depth-bitcoin-sec-box .box-in-depth-sec .text-in-depth-box > p{
+        max-width: 100%;
+        font-size: 14px;
+    }
+	.in-depth-home-coinrise .in-depth-bitcoin-sec-box .box-in-depth-sec .date-time-text-white{
+		right: 22px;
+    	top: 25px;
+	}
+    .in-depth-home-coinrise .in-depth-bitcoin-sec-box .small-box-in-depth .small-box-image-in-depth a img{
+        height: 100% !important;
+    }
+	.in-depth-home-coinrise .in-depth-bitcoin-sec-box .box-in-depth-sec .image-in-depth a img{
+		height:450px;
+	}
+    .in-depth-home-coinrise{
+        padding-bottom: 0;
+    }
+    .footer-coinrise-2 .ads-footer-image{
+        justify-content: center;
+    }
+    .footer-coinrise-2 .ads-footer-image img{
+        height: 340px;
+    }
+    .ads-sec-home .ads-home-banner{
+        padding: 0 15px;
+        height: 110px;
+    }
+    .footer-coinrise-1 .social-icon-logo-coinrise{
+        justify-content: center;
+        gap: 35px;
+    }
+    .footer-logo-coinrise{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+	   .home-banner-coinrise-sec .home-banner-right-content-box .right-content-home-box .right-banner-content-bitcoin-text{
+    max-width: 85% !important;
+    font-size: 18px;
+    }
+	.finance-news-home-page .bitcoin-news-image-box  .bitcoin-image-text-box .news-bitcoin-box-text,.bitcoin-news-image-box .bitcoin-image-text-box .news-bitcoin-box-text{
+		max-width: 85% !important;
+	}
+    .trending-topics-home-page .trending-topic-boxes-main .trending-topic-box .trending-box-content span{
+        max-width: 60%;
+        text-align: center;
+    }
+    .finance-news-home-page{
+        margin-top: 50px !important;
+    }
+	.footer-coinrise-2 .footer-nav-links-coinrise{
+		gap:30px;
+	}
+	.footer-coinrise-2 .footer-nav-links-coinrise li a{
+		color: #101010;
+	}
+     
 }
 
-
-
-/*================ Media Queries Responsive work end ============================= */
-
-
+/* Responsive work end */

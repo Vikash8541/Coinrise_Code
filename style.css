@@ -10,6 +10,7 @@ body{
 /* Global Properties */
 .wrapper{
     overflow: hidden !important;
+    position: relative;
 }
 
 ul,p{
@@ -137,6 +138,66 @@ img{
 }
 
 /* Add Extra */
+.navbar{
+	overflow:visible;
+}
+.navbar .navbar-nav .menu-item{
+	position:relative;
+	cursor:pointer;
+}
+.navbar .navbar-nav .menu-item a:hover{
+	color:#4db2ec;
+}
+.navbar .navbar-nav .menu-item > .sub-menu{
+	list-style:none;
+	position: absolute;
+	top:auto;
+	z-index:99;
+    left: -25px;
+	width: 285px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+	box-shadow: 1px 1px 4px rgba(0,0,0,.15);
+	background-color: #fff;
+	 padding-left: 25px;
+    padding-top: 7px;
+	padding-bottom:7px;
+}
+.navbar .navbar-nav .menu-item > .sub-menu li a {
+    padding:0;
+    font-size: 12px;
+    line-height: 20px;
+    color: #111;
+	font-family:"Inter";
+}
+.navbar .navbar-nav .menu-item > .sub-menu li a:hover {
+	color:#4db2ec;
+}
+.navbar .navbar-nav .menu-item > .sub-menu li{
+	width:100%;
+	height:auto;
+	margin-bottom:4px;
+}
+.navbar .navbar-nav .menu-item:hover .sub-menu{
+	display:flex;
+}
+.navbar .navbar-nav .menu-item > .sub-menu li{
+	position:relative;
+}
+
+.navbar .navbar-nav .menu-item > .sub-menu > li .sub-menu {
+    left: 100%;
+    top: 0;
+	display:none;
+}
+.navbar .navbar-nav .menu-item > .sub-menu > li:hover .sub-menu{
+	display:flex;
+}
+.navbar .navbar-nav .menu-item > .sub-menu > li a i{
+	    transform: rotate(270deg);
+}
 .in-depth-home-coinrise .in-depth-bitcoin-sec-box .box-in-depth-sec.small-box-in-depth .date-time-text-white{
 	top:35px;
 }
