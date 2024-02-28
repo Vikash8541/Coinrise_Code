@@ -71,3 +71,10 @@ jQuery(".features-pre-caro").owlCarousel({
     }
   }
 });
+
+const togglebtndesktop = document.querySelector(".navbar .toggle-icon-desktop-home");
+const togglebox = document.querySelector(".toggle-icon-desktop-home-box");
+
+togglebtndesktop.addEventListener("click",()=>{
+  togglebox.classList.toggle("activebox");
+})
