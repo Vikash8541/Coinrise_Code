@@ -108,7 +108,7 @@ img{
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 5.9%;
+    top: 5.4%;
     z-index: 1;
 }
 .mobile-view-tag-marquee .features-presales-marquees-text{
@@ -130,17 +130,121 @@ img{
     color: #FFFFFF;
     font-size: 14px;
 }
-/* ========== Add Mobile view marquee  ======================*/
 
+.features-presales-marquees-tag{
+    width: 100%;
+    height: 82px;
+    background-color: #411DF2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    cursor: default;
+}
+
+.features-presales-marquees-tag .features-presales-marquees-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.features-presales-marquees-tag .features-presales-marquees-text p{
+    font-size: 15px;
+    font-weight: 400;
+    color: #FFFFFF;
+    font-family: "Inter";
+    line-height: 22px;
+    max-width: 40%;
+    text-align: center;
+    margin-left: 172px;
+}
+.features-presales-marquees-tag .features-presales-marquees-text a{
+    height: 26px;
+    width: 170px;
+    border-radius: 23px;
+    border: 1px solid #D9D9D9;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-family: "Inter";
+    padding: 22px 0px;
+    font-weight: 500;
+    transition: all 0.5s ease;
+}
+.features-presales-marquees-tag .features-presales-marquees-text a:hover{
+    color: #101010;
+    background-color: #fff;
+    border: 1px solid transparent;
+}
 .search-mobile-btn-home{
     display: none;
     margin-left: 25px;
 }
 
-/* Add Extra */
+.toggle-icon-desktop-home-box{
+    z-index: 9!important;
+    position: absolute;
+    left: 0;
+    top: auto;
+    margin-top: -8px;
+    background-color: #101010;
+    height: 0;
+    width: 471px;
+    border-radius: 0 10px 10px 0;
+    transition: all 0.5s ease;
+}
+.toggle-icon-desktop-home-box > ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 50px;
+    margin-left: 50px;
+    opacity: 0;
+    transition: all 0.s ease;
+}
+.toggle-icon-desktop-home-box > ul a{
+    color: #fff;
+}
+
+.toggle-icon-desktop-home-box > ul.activebox{
+    opacity: 1;
+    transition-delay: 0.25s;
+}
+.toggle-icon-desktop-home-box.activebox{
+    height: 480px;
+    animation:scale-up-ver-top .4s cubic-bezier(.39,.575,.565,1.000) both;
+}
+@keyframes scale-up-ver-top{0%{transform:scaleY(.4);transform-origin:100% 0}100%{transform:scaleY(1);transform-origin:100% 0}}
+
+/* =================== Header Page work start ======================= */
 .navbar{
+    position: relative;
 	overflow:visible;
 }
+.mobile-view-data-nav{
+    display: none;
+    align-items: start;
+    flex-direction: column;
+    justify-content: start;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    margin-top: 15px;
+    padding: 0;
+}
+.mobile-view-data-nav li a{
+    color: #101010;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Inter";
+    font-weight: 500;
+}
+
 .navbar .navbar-nav .menu-item{
 	position:relative;
 	cursor:pointer;
@@ -166,11 +270,14 @@ img{
 	padding-bottom:7px;
 }
 .navbar .navbar-nav .menu-item > .sub-menu li a {
-    padding:0;
+    padding: 0;
     font-size: 12px;
     line-height: 20px;
     color: #111;
-	font-family:"Inter";
+    font-family: "Inter";
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .navbar .navbar-nav .menu-item > .sub-menu li a:hover {
 	color:#4db2ec;
@@ -197,92 +304,6 @@ img{
 }
 .navbar .navbar-nav .menu-item > .sub-menu > li a i{
 	    transform: rotate(270deg);
-}
-.in-depth-home-coinrise .in-depth-bitcoin-sec-box .box-in-depth-sec.small-box-in-depth .date-time-text-white{
-	top:35px;
-}
-.home-banner-coinrise-sec{
-	    margin-bottom: 85px;
-}
-.in-depth-home-coinrise{
-	padding-bottom:0;
-}
-.home-banner-coinrise-sec .home-banner-slider .home-banner-right-content-box, .home-banner-coinrise-sec .home-banner-slider .slider-box-home-banner{
-	height:710px;
-}
-.home-banner-coinrise-sec .home-banner-slider .home-banner-right-content-box{
-	justify-content:space-between;
-	align-items:center;
-}
-
-.mobile-view-tag-marquee{
-    width: 100%;
-    height: 82px;
-    background-color: #411DF2;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 5.9%;
-    z-index: 1;
-}
-.mobile-view-tag-marquee .features-presales-marquees-text{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.mobile-view-tag-marquee .features-presales-marquees-text p{
-    font-size: 15px;
-    font-weight: 400;
-    color: #FFFFFF;
-    font-family: "Inter";
-    line-height: 22px;
-    max-width: 40%;
-    text-align: center;
-    margin-left: 172px;
-}
-.mobile-view-tag-marquee .features-presales-marquees-text a{
-    color: #FFFFFF;
-    font-size: 14px;
-}
-.search-mobile-btn-home{
-    display: none;
-    margin-left: 25px;
-}
-
-.toggle-icon-desktop-home-box{
-    z-index: 999 !important;
-    position: absolute;
-    left: 0;
-    top: auto;
-    margin-top: -8px;
-    background-color: #101010;
-    height: 480px;
-    width: 471px;
-    border-radius: 0 10px 10px 0;
-    display: none;
-}
-.toggle-icon-desktop-home-box.activebox{
-    display: block;
-    animation:scale-up-top .4s cubic-bezier(.39,.575,.565,1.000) both;
-}
-@keyframes scale-up-top{0%{transform:scale(.5);transform-origin:50% 0}100%{transform:scale(1);transform-origin:50% 0}}
-.toggle-icon-desktop-home-box > ul{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    margin-top: 50px;
-    margin-left: 50px;
-}
-.toggle-icon-desktop-home-box > ul a{
-    color: #fff;
-}
-/* =================== Header Page work start ======================= */
-
-.navbar{
-    position: relative;
-    overflow: hidden;
 }
 .navbar::after{
     z-index: 1;
@@ -321,7 +342,6 @@ img{
 .navbar .search-form-box:hover input::placeholder{
     opacity:0;
 }
-/* ==== new add =====*/
 .navbar .navbar-brand .logo::before{
     content: '';
     position: absolute;
@@ -371,6 +391,7 @@ img{
      padding: 8px 10px;
      width: 130px;
      position: relative;
+     display: flex;
 }
 .navbar .search-form-box::before{
     z-index: 1;
@@ -499,11 +520,29 @@ img{
 .home-banner-coinrise-sec .home-banner-slider .slider-box-home-banner .slider-button-home-banner{
     position: absolute;
     right: 40px;
-    bottom: 53px;
+    bottom: 52px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 15px;
+}
+.home-banner-coinrise-sec .home-banner-slider .slider-box-home-banner .slider-button-home-banner .carousel-control-prev span i, .home-banner-coinrise-sec .home-banner-slider .slider-box-home-banner .slider-button-home-banner .carousel-control-next span i {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    font-size: 12px;
+    font-weight: bold;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+.home-banner-coinrise-sec .home-banner-slider .slider-box-home-banner .slider-button-home-banner .carousel-control-prev span i:hover, .home-banner-coinrise-sec .home-banner-slider .slider-box-home-banner .slider-button-home-banner .carousel-control-next span i:hover {
+    background-color: #fff;
+    color: #101010;
 }
 .home-banner-coinrise-sec .home-banner-slider .slider-box-home-banner .slider-button-home-banner .prev-slide-btn, .home-banner-coinrise-sec .home-banner-slider .slider-box-home-banner .slider-button-home-banner .next-slide-btn{
     all: unset;
@@ -519,7 +558,6 @@ img{
     flex-direction: column;
     background-color: #000;
     width: 100%;
-    height: 673px;
     border-radius: 10px;
     padding: 30px 25px;
     cursor: default;
@@ -570,6 +608,13 @@ text-decoration: underline;
     font-weight: 400;
     max-width: 85%;
 }
+.home-banner-coinrise-sec .home-banner-slider .home-banner-right-content-box, .home-banner-coinrise-sec .home-banner-slider .slider-box-home-banner{
+	height:710px;
+}
+.home-banner-coinrise-sec .home-banner-slider .home-banner-right-content-box{
+	justify-content:space-between;
+	align-items:center;
+}
 /* =================== Home Banner Work end ======================= */
 
 
@@ -599,50 +644,9 @@ text-decoration: underline;
     font-family: "Inter";
     margin-bottom: 20px;
 }
-
-.home-features-presales-slider .features-presales-marquees-tag{
-    width: 100%;
-    height: 82px;
-    background-color: #411DF2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 95px;
-    z-index: 1;
-}
 .home-features-presales-slider .carousel-handle-features-pre-sales{
     position: relative;
     isolation: isolate;
-}
-.home-features-presales-slider .features-presales-marquees-tag .features-presales-marquees-text{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.home-features-presales-slider .features-presales-marquees-tag .features-presales-marquees-text p{
-    font-size: 15px;
-    font-weight: 400;
-    color: #FFFFFF;
-    font-family: "Inter";
-    line-height: 22px;
-    max-width: 40%;
-    text-align: center;
-    margin-left: 172px;
-}
-.home-features-presales-slider .features-presales-marquees-tag .features-presales-marquees-text a{
-    height: 26px;
-    width: 170px;
-    border-radius: 23px;
-    border: 1px solid #D9D9D9;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #FFFFFF;
-    font-size: 14px;
-    font-family: "Inter";
-    padding: 22px 0px;
-    font-weight: 500;
 }
 
 .home-features-presales-slider .features-presales-boxes{
@@ -719,17 +723,32 @@ text-decoration: underline;
 .home-features-presales-slider .features-presales-boxes:hover .text-features-presales-box .text-features-presales a{
 text-decoration: underline;
 }
-.owl-carousel .owl-nav.disabled{
+.home-features-presales-slider .carousel-handle-features-pre-sales .owl-carousel .owl-nav{
     position: absolute;
     top: -64px;
     right: 0;
-    display: flex;
+    display: flex !important;
     align-items: center;
     justify-content: center;
     gap: 20px;
-
 }
-
+.home-features-presales-slider .carousel-handle-features-pre-sales .owl-carousel .owl-nav button span{
+    background-color: transparent;
+    font-size: 22px;
+    font-weight: 550;
+    padding: 5px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #B8B8B8;
+    color: #101010;
+    transition: background-color 0.5s ease, border 0.5s ease;
+}
+.home-features-presales-slider .carousel-handle-features-pre-sales .owl-carousel .owl-nav button span:hover{
+    background-color: #D9D9D9;
+    border: 1px solid transparent;
+}
 /* =================== Features Slider work end ======================= */
 
 
@@ -757,6 +776,7 @@ text-decoration: underline;
     align-items: center;
     justify-content: center;
     position: relative;
+    transition: border 0.5s ease;
 }
 .news-text-box-page .all-news-text a::before{
     z-index: -1;
@@ -765,12 +785,15 @@ text-decoration: underline;
     height: 100%;
     width: 100%;
     border-radius: 23px;
-    border:  1px solid transparent;
+    border: transparent;
     transform-origin: center;
-    transform: scale(0.5);
+    transform: scale(0.2);
     opacity: 0;
-    background-color: #D9D9D9;
+    background-color: #F2F2F2;
     transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.news-text-box-page .all-news-text a:hover{
+    border: transparent;
 }
 .news-text-box-page .all-news-text a:hover::before{
     opacity: 1;
@@ -858,7 +881,7 @@ text-decoration: underline;
 }
 .trending-topics-home-page .trending-topic-boxes-main .trending-topic-box .trending-box-content:hover a img{
     opacity: .9;
-    transform: scale(1.3);
+    transform: scale(1.1);
 }
 .trending-topics-home-page .trending-topic-boxes-main .trending-topic-box .trending-box-content span{
     position: absolute;
@@ -873,7 +896,6 @@ text-decoration: underline;
 }
 .trending-topics-home-page .trending-topic-boxes-main .trending-topic-box .trending-box-content:hover span{
     bottom: 100px;
-    font-size: 23px;
 }
 /* =================== Trending Topic work end ======================= */
 
@@ -901,6 +923,7 @@ text-decoration: underline;
     align-items: center;
     justify-content: center;
     position: relative;
+    transition: border 0.5s ease;
 }
 .finance-news-home-page .all-news-text > a::before{
     z-index: -1;
@@ -909,12 +932,15 @@ text-decoration: underline;
     height: 100%;
     width: 100%;
     border-radius: 23px;
-    border:  1px solid transparent;
+    border: transparent;
     transform-origin: center;
-    transform: scale(0.5);
+    transform: scale(0.2);
     opacity: 0;
-    background-color: #D9D9D9;
+    background-color: #F2F2F2;
     transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.finance-news-home-page .all-news-text > a:hover{
+    border: transparent;
 }
 .finance-news-home-page .all-news-text > a:hover::before{
     opacity: 1;
@@ -972,13 +998,14 @@ text-decoration: underline;
     font-size: 14px;
     font-weight: 500;
     font-family: "Inter";
-    border:  1px solid  #D9D9D9;
+    border:  1px solid  transparent;
     border-radius: 23px;
     display: flex;
     height: 46px;
     width: 170px;
     align-items: center;
     justify-content: center;
+    background-color: #fff;
     position: relative;
     isolation: isolate;
 }
@@ -989,12 +1016,15 @@ text-decoration: underline;
     height: 100%;
     width: 100%;
     border-radius: 23px;
-    border:  1px solid transparent;
+    border: transparent;
     transform-origin: center;
-    transform: scale(0.5);
+    transform: scale(0.2);
     opacity: 0;
     background-color: #D9D9D9;
     transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.home-coinrise-press-release-sec .all-news-text > a:hover{
+    border: transparent;
 }
 .home-coinrise-press-release-sec .all-news-text > a:hover::before{
     opacity: 1;
@@ -1045,6 +1075,23 @@ margin: 30px auto;
 .home-coinrise-press-release-sec .owl-carousel .owl-nav button.owl-next{
     transform: translateX(78px);
 }
+.home-coinrise-press-release-sec  .owl-carousel .owl-nav button span{
+    background-color: transparent;
+    font-size: 22px;
+    font-weight: 550;
+    padding: 5px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #B8B8B8;
+    color: #101010;
+    transition: background-color 0.5s ease, border 0.5s ease;
+}
+.home-coinrise-press-release-sec  .owl-carousel .owl-nav button span:hover{
+    background-color: #D9D9D9;
+    border: 1px solid transparent;
+}
 /* =================== Press Release Work end ======================= */
 
 /* =================== In depth work start ======================= */
@@ -1074,6 +1121,7 @@ margin: 30px auto;
     justify-content: center;
     position: relative;
     isolation: isolate;
+    transition: border 0.5s ease;
 }
 .in-depth-home-coinrise .all-news-text > a::before{
     z-index: -1;
@@ -1082,16 +1130,19 @@ margin: 30px auto;
     height: 100%;
     width: 100%;
     border-radius: 23px;
-    border:  1px solid transparent;
+    border:  transparent;
     transform-origin: center;
-    transform: scale(0.5);
+    transform: scale(0.2);
     opacity: 0;
-    background-color: #D9D9D9;
+    background-color: #f2f2f2;
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
 .in-depth-home-coinrise .all-news-text > a:hover::before{
     opacity: 1;
     transform: scale(1);
+}
+.in-depth-home-coinrise .all-news-text > a:hover{
+    border: transparent;
 }
 .in-depth-home-coinrise .in-depth-bitcoin-sec-box{
     margin: 35px auto;
@@ -1153,6 +1204,7 @@ margin: 30px auto;
     font-family: "Inter";
     max-width: 80%;
 }
+
 /* Small box */
 .in-depth-home-coinrise .in-depth-bitcoin-sec-box .small-box-in-depth{
     height: 274px !important;
@@ -1170,7 +1222,15 @@ margin: 30px auto;
     font-size: 22px !important;
     line-height: 30px !important;
 }
-
+.in-depth-home-coinrise .in-depth-bitcoin-sec-box .box-in-depth-sec.small-box-in-depth .date-time-text-white{
+	top:35px;
+}
+.home-banner-coinrise-sec{
+	    margin-bottom: 85px;
+}
+.in-depth-home-coinrise{
+	padding-bottom:0;
+}
 /* =================== In depth work end ======================= */
 
 
@@ -1204,6 +1264,7 @@ margin: 30px auto;
     width: 100%;
     height: auto;
     padding: 20px 0;
+    margin-bottom: 80px;
 }
 .footer-coinrise-2 .footer-nav-links-coinrise{
     display: flex;

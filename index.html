@@ -19,7 +19,7 @@
 
 <body>
     <div class="wrapper">
-        <div class="features-presales-marquees-tag mobile-view-tag-marquee">
+        <div class="mobile-view-tag-marquee">
             <div class="container">
                 <div class="features-presales-marquees-text">
                     <img src="https://dev.thecoinrise.com/wp-content/themes/thecoinrise/images/features-presales-thunder.svg"
@@ -49,15 +49,13 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav m-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">News &nbsp;<img src="./images/down-arrow.svg" alt=""></a>
+                                <a class="nav-link" href="#">News &nbsp;<i class="fa-solid fa-angle-down"></i></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Educations &nbsp;<img src="./images/down-arrow.svg"
-                                        alt=""></a>
+                                <a class="nav-link" href="#">Educations &nbsp;<i class="fa-solid fa-angle-down"></i></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Reviews &nbsp;<img src="./images/down-arrow.svg"
-                                        alt=""></a>
+                                <a class="nav-link" href="#">Reviews &nbsp;<i class="fa-solid fa-angle-down"></i></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">PR Services</a>
@@ -68,8 +66,13 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Partners</a>
                             </li>
+                            <ul class="mobile-view-data-nav">
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Advertisement</a></li>
+                                <li><a href="#">About Us</a></li>
+                            </ul>
                         </ul>
-                        <form class="d-flex align-items-center justify-content-end gap-3 search-form-box" role="search">
+                        <form class="align-items-center justify-content-end gap-3 search-form-box" role="search">
                             <img src="./images/search.svg" alt="">
                             <input type="text" placeholder="Search">
                         </form>
@@ -132,13 +135,11 @@
                                                 <div class="slider-button-home-banner">
                                                     <button class="prev-slide-btn carousel-control-prev" type="button"
                                                         data-bs-target="#carouselExampleRide" data-bs-slide="prev">
-                                                        <span class="carousel-control-prev-icon" aria-hidden="true"><img
-                                                                src="./images/V2(1).svg" alt=""></span>
+                                                        <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fa-solid fa-chevron-left"></i></span>
                                                     </button>
                                                     <button class="next-slide-btn carousel-control-next" type="button"
                                                         data-bs-target="#carouselExampleRide" data-bs-slide="next">
-                                                        <span class="carousel-control-next-icon" aria-hidden="true"><img
-                                                                src="./images/V2.svg" alt=""></span>
+                                                        <span class="carousel-control-next-icon" aria-hidden="true"><i class="fa-solid fa-angle-right"></i></span>
                                                     </button>
                                                 </div>
                                             </div>
@@ -165,13 +166,11 @@
                                                 <div class="slider-button-home-banner">
                                                     <button class="prev-slide-btn carousel-control-prev" type="button"
                                                         data-bs-target="#carouselExampleRide" data-bs-slide="prev">
-                                                        <span class="carousel-control-prev-icon" aria-hidden="true"><img
-                                                                src="./images/V2(1).svg" alt=""></span>
+                                                        <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fa-solid fa-chevron-left"></i></span>
                                                     </button>
                                                     <button class="next-slide-btn carousel-control-next" type="button"
                                                         data-bs-target="#carouselExampleRide" data-bs-slide="next">
-                                                        <span class="carousel-control-next-icon" aria-hidden="true"><img
-                                                                src="./images/V2.svg" alt=""></span>
+                                                        <span class="carousel-control-next-icon" aria-hidden="true"><i class="fa-solid fa-angle-right"></i></span>
                                                     </button>
                                                 </div>
                                             </div>
@@ -198,13 +197,11 @@
                                                 <div class="slider-button-home-banner">
                                                     <button class="prev-slide-btn carousel-control-prev" type="button"
                                                         data-bs-target="#carouselExampleRide" data-bs-slide="prev">
-                                                        <span class="carousel-control-prev-icon" aria-hidden="true"><img
-                                                                src="./images/V2(1).svg" alt=""></span>
+                                                        <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fa-solid fa-chevron-left"></i></span>
                                                     </button>
                                                     <button class="next-slide-btn carousel-control-next" type="button"
                                                         data-bs-target="#carouselExampleRide" data-bs-slide="next">
-                                                        <span class="carousel-control-next-icon" aria-hidden="true"><img
-                                                                src="./images/V2.svg" alt=""></span>
+                                                        <span class="carousel-control-next-icon" aria-hidden="true"><i class="fa-solid fa-angle-right"></i></span>
                                                     </button>
                                                 </div>
                                             </div>
@@ -253,17 +250,6 @@
         </section>
 
         <section class="home-features-presales-slider">
-            <div class="features-presales-marquees-tag">
-                <div class="container">
-                    <div class="features-presales-marquees-text">
-                        <img src="./images/features-presales-thunder.svg" alt="">
-                        <p>Receive 100% APY by getting in early on Harambe A.I Token! The groundbreaking A.I. powered
-                            meme
-                            token</p>
-                        <a href="#">Join Now</a>
-                    </div>
-                </div>
-            </div>
             <div class="container carousel-handle-features-pre-sales">
                 <div class="row">
                     <div class="col-12">
@@ -313,6 +299,7 @@
                             </div>
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </section>
@@ -915,6 +902,17 @@
                 </div>
             </div>
         </footer>
+        <div class="features-presales-marquees-tag">
+            <div class="container">
+                <div class="features-presales-marquees-text">
+                    <img src="./images/features-presales-thunder.svg" alt="">
+                    <p>Receive 100% APY by getting in early on Harambe A.I Token! The groundbreaking A.I. powered
+                        meme
+                        token</p>
+                    <a href="#">Join Now</a>
+                </div>
+            </div>
+        </div>
     </div>
 
 

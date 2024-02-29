@@ -5,7 +5,6 @@ jQuery(".features-pre-caro").owlCarousel({
     autoplay: true,
     autoplayTimeout: 3000,
     smartSpeed: 800,
-    navText: ["<img src='./images/features-pre-left.svg'>","<img src='./images/features-pre-right.svg'>"],
     nav: true,
     dots:false,
     responsive: {
@@ -42,7 +41,6 @@ jQuery(".features-pre-caro").owlCarousel({
   autoplay: true,
   autoplayTimeout: 3000,
   smartSpeed: 800,
-  navText: ["<img src='./images/features-pre-left.svg'>","<img src='./images/features-pre-right.svg'>"],
   nav: true,
   dots:false,
   responsive: {
@@ -72,9 +70,12 @@ jQuery(".features-pre-caro").owlCarousel({
   }
 });
 
+
+// Js for Toggle icon home page
 const togglebtndesktop = document.querySelector(".navbar .toggle-icon-desktop-home");
 const togglebox = document.querySelector(".toggle-icon-desktop-home-box");
-
+const toggleboxcontent = document.querySelector(".toggle-icon-desktop-home-box > ul");
 togglebtndesktop.addEventListener("click",()=>{
   togglebox.classList.toggle("activebox");
+  toggleboxcontent.classList.toggle("activebox");
 })
