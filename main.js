@@ -79,3 +79,11 @@ togglebtndesktop.addEventListener("click",()=>{
   togglebox.classList.toggle("activebox");
   toggleboxcontent.classList.toggle("activebox");
 })
+
+
+const mobiletoggle = document.querySelector(".mobile-hamburger-icon");
+const mobilenav = document.querySelector(".mobile-view-navigation-sec-coinrise");
+
+mobiletoggle.addEventListener("click",()=>{
+  mobilenav.classList.toggle("mobilenavactive");
+})

@@ -24,7 +24,9 @@ img{
     height: auto;
     object-fit: cover;
 }
-
+.mobile-hamburger-icon{
+    display: none;
+}
 
 /* Today - 22 / 02 / 24 */
 /* Global Data for All pages */
@@ -226,6 +228,12 @@ img{
     position: relative;
 	overflow:visible;
 }
+.mobile-hamburger-icon{
+	display:none;
+}
+.mobile-view-navigation-sec-coinrise{
+    display: none;
+}
 .mobile-view-data-nav{
     display: none;
     align-items: start;
@@ -234,7 +242,7 @@ img{
     gap: 10px;
     list-style: none;
     margin: 0;
-    margin-top: 15px;
+    margin-top: 35px;
     padding: 0;
 }
 .mobile-view-data-nav li a{
@@ -265,8 +273,9 @@ img{
     flex-direction: column;
 	box-shadow: 1px 1px 4px rgba(0,0,0,.15);
 	background-color: #fff;
-	 padding-left: 25px;
-    padding-top: 7px;
+	padding-left: 25px;
+    padding-top: 20px;
+    gap: 12px;
 	padding-bottom:7px;
 }
 .navbar .navbar-nav .menu-item > .sub-menu li a {
@@ -335,6 +344,7 @@ img{
 }
 .navbar .navbar-nav .menu-item i{
 	transition: transform 0.5s ease;
+    margin-right: 15px;
 }
 .navbar .search-form-box:hover {
     width: 22%;
@@ -345,7 +355,7 @@ img{
 .navbar .navbar-brand .logo::before{
     content: '';
     position: absolute;
-    background: url(./images/Vector.png) no-repeat center;
+    background: url(../images/Vector.png) no-repeat center;
     background-size: cover;
     height: 35%;
     width: 40%;
@@ -519,8 +529,8 @@ img{
 }
 .home-banner-coinrise-sec .home-banner-slider .slider-box-home-banner .slider-button-home-banner{
     position: absolute;
-    right: 40px;
-    bottom: 52px;
+    right: 37px;
+    bottom: 42px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -690,11 +700,12 @@ text-decoration: underline;
     font-weight: 500;
     max-width: 65%;
     line-height: 27px;
+    margin-top:8px;
 }
  .features-presales-boxes .features-presales-crypto-box{
     position: absolute;
     top: 20px;
-    left: 216px;
+    left: 33%;
 }
 .home-features-presales-slider .features-presales-boxes .dated-features-presales{
     position: absolute;
@@ -887,6 +898,7 @@ text-decoration: underline;
     position: absolute;
     bottom: 20px;
     left: 50%;
+    text-align: center;
     transform: translateX(-50%);
     color: #fff;
     font-size: 14px;
@@ -1321,5 +1333,4 @@ margin: 30px auto;
     letter-spacing: .1px;
 }
 /* =================== Footer Page work end ======================= */
-
 
