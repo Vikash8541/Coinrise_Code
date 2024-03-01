@@ -201,13 +201,17 @@ img{
 }
 .toggle-icon-desktop-home-box > ul{
     list-style: none;
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 25px;
     margin-top: 50px;
     margin-left: 50px;
     opacity: 0;
-    transition: all 0.s ease;
+    transition-delay: 0.25s;
+    transition: all 0.5s ease;
+}
+.toggle-icon-desktop-home-box > ul.activebox{
+    display: flex;
 }
 .toggle-icon-desktop-home-box > ul a{
     color: #fff;
@@ -1333,4 +1337,235 @@ margin: 30px auto;
     letter-spacing: .1px;
 }
 /* =================== Footer Page work end ======================= */
+
+
+/* ============================ ARTICLE PAGE WORK START ===================================== */
+
+/* Global for articles */
+.crypto-black a{
+    font-size: 13px;
+    background-color: #101010;
+    color: #fff;
+    font-weight: 500;
+    font-family: "Inter";
+    width: 128px;
+    height: 28px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+.crypto-black a:hover{
+    color: #101010;
+    background-color: transparent;
+    border:1px solid #101010;
+}
+.date-time-text-black{
+    font-size: 14px;
+    color: #000;
+    font-weight: 400;
+    font-family: "Inter";
+}
+.social-icon-article-page-box{
+    background-color: #F4F4F4;
+    height: 64px;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin: 40px auto;    
+}
+.other-place-footer-margin{
+    margin-bottom: 0;
+}
+
+/* Global for articles */
+
+
+/* ================================= Banner Article Start =============================================== */
+.article-page-content-handle-main{
+    margin: 40px auto;
+}
+.article-banner-left-box{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    width: 100%;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.article-banner-left-box .article-banner-big-image-box{
+    height: 433px;
+    border-radius: 10px;
+    width: 100%;
+}
+.article-banner-left-box .article-banner-big-image-box > img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.article-banner-left-box .article-banner-left-box-heading{
+    padding-bottom: 15px;
+    border-bottom: 2px solid #D9D9D9;
+}
+.article-banner-left-box .article-banner-left-box-heading > a{
+    font-size: 34px;
+    font-weight: 500;
+    color: #101010;
+    font-family: "Inter";
+}
+.article-banner-left-box .article-banner-left-box-heading > a:hover{
+    text-decoration: underline;
+}
+.article-banner-left-box .article-category-posting-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.article-banner-left-box .article-category-posting-details .article-category-post-name{
+    margin-left: auto;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-right: 2px solid #D9D9D9;
+    padding-right: 30px;
+}
+.article-banner-left-box .article-category-posting-details .article-category-post-name > a{
+    font-size: 14px;
+    font-family: "Inter";
+    color: #000;
+    font-weight: 400;
+    text-decoration: none;
+}
+.article-banner-left-box .article-category-posting-details .article-category-post-name img{
+transition:  opacity 0.5s ease;
+}
+.article-banner-left-box .article-category-posting-details .article-category-post-name:hover img{
+    opacity: 0.8;
+}
+.article-banner-left-box .article-category-posting-details .article-category-post-name:hover  a{
+    text-decoration: underline;
+}
+.article-banner-right-head{
+    margin: 0;
+}
+.article-banner-right-head .home-banner-slider{
+    margin: 0;
+}
+.article-banner-right-head .home-banner-slider .home-banner-right-content-box{
+    height: 100%;
+    background-color: #fff;
+}
+.article-banner-right-head .home-banner-slider .home-banner-right-content-box .right-content-home-box .right-banner-content-bitcoin-text {
+    max-width: 90%;
+}
+.article-banner-right-head .home-banner-slider .home-banner-right-content-box .right-content-home-box .right-banner-content-bitcoin-text > a{
+    color: #101010;
+    font-size: 20px;
+}
+
+
+.article-banner-right-head .home-banner-slider .home-banner-right-content-box .right-content-home-box p{
+    color: #101010;
+}
+
+
+.article-banner-right-head .home-banner-slider .home-banner-right-content-box .right-content-home-box {
+    border-bottom: 2px solid #D9D9D9;
+    padding-bottom: 23px;
+}
+.article-banner-right-head .home-banner-slider .home-banner-right-content-box .right-content-home-box:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.article-banner-right-head .home-banner-slider .home-banner-right-content-box .right-content-home-box:hover .crypto-black > a{
+    color: #101010;
+    background-color: transparent;
+    border: 1px solid #101010;
+}
+/* ================================= Banner Article End =============================================== */
+
+
+/* ================================= Article Tag Start =============================================== */
+.article-tag-social-icon-handle{
+    border: 1px solid #F4F4F4;
+    border-top: none;
+    border-radius: 10px;
+    padding: 10px 0;
+    margin: 40px auto;
+}
+.article-tag-social-icon-handle .article-page-tag-box{
+    background-color: #f4f4f4;
+    height: 79px;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 25px;
+    padding: 45px 30px;
+}
+.article-tag-social-icon-handle .article-page-tag-box a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 10px;
+    height: 30px;
+    width: 85px;
+    color: #101010;
+    font-size: 13px;
+    font-weight: 550;
+    letter-spacing: .2px;
+    font-family: "Inter";
+}
+.article-tag-social-icon-handle .social-icon-article-page-box{
+    margin: 0;
+    background-color: transparent;
+    height: 79px;
+    width: 100%;
+    padding: 40px 30px;
+}
+
+/* ================================= Article Tag End =============================================== */
+
+
+/* ================================= Read More start =============================================== */
+.read-more-section-article-page .financ-news-home-boxes .bitcoin-news-image-box .img a img{
+    width: 100%;
+}
+/* ================================= Read More end =============================================== */
+
+
+/* ================================= Ads work start =============================================== */
+.right-article-section-ads-box{
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+}
+.right-article-section-ads-box a{
+    border: 2px solid #D9D9D9;
+    padding: 40px;
+    border-radius: 10px;   
+}
+
+
+
+
+/* ================================= Ads work end =============================================== */
+
+
+/* ============================ ARTICLE PAGE WORK END ===================================== */
 
