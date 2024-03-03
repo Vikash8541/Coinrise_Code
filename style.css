@@ -228,6 +228,16 @@ img{
 @keyframes scale-up-ver-top{0%{transform:scaleY(.4);transform-origin:100% 0}100%{transform:scaleY(1);transform-origin:100% 0}}
 
 /* =================== Header Page work start ======================= */
+
+header{
+	position:fixed;
+	width:100%;
+	height:88px;
+	top:auto;
+	left:0;
+	background-color:#fff;
+	z-index:9999 !important;
+}
 .navbar{
     position: relative;
 	overflow:visible;
@@ -436,6 +446,9 @@ img{
 /* =================== Home Banner Work start ======================= */
 
 /* Global Type work */
+.ads-sec-home{
+    margin: 120px auto 30px auto;
+}
 .ads-sec-home .ads-home-banner{
     display: flex;
     align-items: center;

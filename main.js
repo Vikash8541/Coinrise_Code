@@ -87,3 +87,13 @@ const mobilenav = document.querySelector(".mobile-view-navigation-sec-coinrise")
 mobiletoggle.addEventListener("click",()=>{
   mobilenav.classList.toggle("mobilenavactive");
 })
+
+
+// const navanchor = document.querySelectorAll(".navbar .navbar-nav li a i")
+// navanchor.forEach(navlink =>{
+//   navlink.addEventListener("click",(e)=>{
+//     e.preventDefault();
+//   })
+//   console.log(navlink)
+// })
+// console.log(navanchor)
