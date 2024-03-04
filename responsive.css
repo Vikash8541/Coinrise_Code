@@ -784,9 +784,8 @@
     border-bottom: 0;
   }
   .article-banner-section-main .article-banner-left-box .article-banner-left-box-heading>a {
-    font-size: 22px;
-    line-height: 28px;
-    max-width: 100%;
+    font-size: 24px;
+    line-height: 31px;
   }
 
   
@@ -832,6 +831,10 @@
   }
   .article-read-more-tag-main .read-more-section-article-page .financ-news-home-boxes .bitcoin-news-image-box .bitcoin-img-info-text h6{
     font-size: 10px;
+  }
+  .article-read-more-tag-main .article-tag-social-icon-handle .article-page-tag-box{
+    height: 70px;
+    padding: 0 20px;
   }
   /* ============================ ARTICLE PAGE RESPONSIVE WORK END ============================ */
 }
@@ -1371,19 +1374,25 @@
     border-bottom: 0;
   }
   .article-banner-section-main .article-banner-left-box .article-banner-left-box-heading>a {
-    font-size: 22px;
-    line-height: 28px;
-    max-width: 100%;
+    font-size: 24px;
+    line-height: 31px;
   }
 
   .article-banner-section-main .article-banner-left-right-container,
   .article-banner-section-main .article-box-left-top-heading-collapse {
     flex-direction: column-reverse;
   }
+  .article-banner-section-main .article-banner-right-head{
+    display: none;
+  }
+  .owl-caro-article-mob-right{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+  }
   .article-banner-section-main .article-banner-right-head .home-banner-slider .home-banner-right-content-box{
     padding: 0;
     margin-bottom: 30px;
-    /* flex-direction: row; */
   }
   .article-banner-section-main .article-banner-right-head .home-banner-slider .home-banner-right-content-box .right-content-home-box .right-banner-content-bitcoin-text{
     max-width: 100% !important;
@@ -1393,7 +1402,7 @@
   }
   .article-banner-section-main .article-banner-left-box .article-category-posting-details {
     align-items: start;
-    justify-content: start;
+    justify-content: space-between;
     padding-bottom: 30px;
     border-bottom: 1px solid #D9D9D9;
   }
@@ -1414,8 +1423,7 @@
   .article-banner-section-main .article-banner-left-box .article-category-posting-details .article-category-post-name{
     margin-left: 0;
     gap: 7px;
-    margin-right: 12px;
-    padding-right: 12px;
+    margin-right: 0;
   }
   .social-icon-article-page-box{
     gap: 28px;
@@ -1435,6 +1443,10 @@
   .footer-ads-sec{
     margin: 0;
     margin-top: -55px;
+  }
+  .article-read-more-tag-main .article-tag-social-icon-handle{
+    margin: 0;
+    margin-top: 40px;
   }
   /* ============================ ARTICLE PAGE RESPONSIVE WORK END ============================ */
 

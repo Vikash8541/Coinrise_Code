@@ -1475,6 +1475,8 @@ margin: 30px auto;
 }
 .article-banner-section-main .article-banner-left-box .article-category-posting-details .article-category-post-name img{
 transition:  opacity 0.5s ease;
+height: 25px;
+width: 25px;
 }
 .article-banner-section-main .article-banner-left-box .article-category-posting-details .article-category-post-name:hover img{
     opacity: 0.8;
@@ -1520,6 +1522,84 @@ transition:  opacity 0.5s ease;
     background-color: transparent;
     border: 1px solid #101010;
 }
+
+
+/* Mobile article right Content */
+.owl-caro-article-mob-right{
+    display: none;
+    margin-bottom: 28px;
+}
+.article-banner-right {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+.owl-caro-article-mob-right .right-content-home-box{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 35px;
+}
+.owl-caro-article-mob-right .right-content-home-box:last-child{
+    margin-bottom: 0;
+}
+.owl-caro-article-mob-right .right-content-home-box .crypto-date-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.owl-caro-article-mob-right .right-content-home-box:hover .right-content-crypto-box a{
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+.owl-caro-article-mob-right .right-content-home-box .crypto-date-text h6{
+    font-size: 14px;
+    font-family: "Inter";
+    font-weight: 600;
+    color: #fff;
+    margin: 0;
+}
+.owl-caro-article-mob-right .right-content-home-box .right-banner-content-bitcoin-text > a{
+    color: #101010;
+    font-size: 20px;
+}
+.owl-caro-article-mob-right .right-content-home-box .right-banner-content-bitcoin-text p{
+    font-size: 14px;
+    font-family: "Inter";
+    font-weight: 400;
+    color: #101010;
+}
+.owl-caro-article-mob-right .right-content-home-box > a{
+    font-size: 20px;
+    font-family: "Inter";
+    font-weight: 500;
+    color: #fff;
+    max-width: 70%;
+    line-height: 26px;
+    margin: 0;
+}
+.owl-caro-article-mob-right .right-content-home-box:hover .right-banner-content-bitcoin-text > a{
+text-decoration: underline;
+}
+.owl-caro-article-mob-right .right-content-home-box p{
+    color: #101010;
+    font-size: 14px;
+    font-family: "Inter";
+    font-weight: 400;
+    max-width: 85%;
+}
+.owl-caro-article-mob-right .right-content-home-box .crypto-date-text .crypto-black a{
+    font-size: 11px;
+    height: 27px;
+    width: 72px;
+    border-radius: 5px;
+}
+.owl-caro-article-mob-right .right-content-home-box .date-time-text-grey{
+    display: none;
+}
+/* Mobile article right Content */
 /* ================================= Banner Article End =============================================== */
 
 
@@ -1570,6 +1650,12 @@ transition:  opacity 0.5s ease;
 /* ================================= Read More start =============================================== */
 .read-more-section-article-page .financ-news-home-boxes .bitcoin-news-image-box .img a img{
     width: 100%;
+}
+.read-more-section-article-page .financ-news-home-boxes .bitcoin-news-image-box .bitcoin-image-text-box .news-bitcoin-box-text{
+    max-width: 90%;
+}
+.read-more-section-article-page .financ-news-home-boxes .bitcoin-news-image-box .bitcoin-image-text-box .news-bitcoin-box-text a{
+    max-width: 100%;
 }
 /* ================================= Read More end =============================================== */
 
