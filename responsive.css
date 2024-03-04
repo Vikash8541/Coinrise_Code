@@ -354,11 +354,6 @@
 
 @media (min-width: 768px) and (max-width: 1023px) {
 
-  header {
-    top: 0 !important;
-    height: 69px !important;
-  }
-
   .mobile-view-navigation-sec-coinrise {
     margin-top: -8px;
     z-index: 11 !important;
@@ -781,6 +776,64 @@
     align-items: center;
     justify-content: space-between;
   }
+  /* ============================ ARTICLE PAGE RESPONSIVE WORK START ============================ */
+  .article-banner-section-main .article-banner-left-box{
+    gap: 12px;
+  }
+  .article-banner-section-main .article-banner-left-box .article-banner-left-box-heading{
+    border-bottom: 0;
+  }
+  .article-banner-section-main .article-banner-left-box .article-banner-left-box-heading>a {
+    font-size: 22px;
+    line-height: 28px;
+    max-width: 100%;
+  }
+
+  
+  .article-banner-section-main .article-banner-right-head .home-banner-slider .home-banner-right-content-box{
+    padding: 0;
+  }
+
+  .article-banner-section-main .article-box-left-top-heading-collapse{
+    gap: 17px;
+  }
+  .article-banner-section-main .article-banner-big-image-box a img{
+    height: 457px;
+}
+.article-banner-section-main .article-banner-right-head .home-banner-slider .home-banner-right-content-box .right-content-home-box .right-banner-content-bitcoin-text > a{
+  font-size: 16px;
+}
+.article-banner-section-main .article-banner-right-head .home-banner-right-content-box .right-content-home-box .crypto-date-text .crypto-black a{
+  width: 105px;
+}
+
+  .article-banner-section-main .article-banner-left-box .article-category-posting-details .article-category-post-name{
+    margin-left: auto;
+    gap: 7px;
+    margin-right: 12px;
+    padding-right: 12px;
+  }
+  .social-icon-article-page-box{
+    gap: 40px;
+  }
+  .social-icon-article-page-box a img{
+    height: 22px;
+    width: 100%;
+  }
+  .article-blog-text-ads-sec-main .right-article-section-ads-box{
+    margin-top: 30px;
+  }
+  .article-blog-text-ads-sec-main .right-article-section-ads-box a{
+    padding: 25px;
+  }
+  .footer-ads-sec{
+    margin: 0;
+    margin-top: -55px;
+  }
+  .article-read-more-tag-main .read-more-section-article-page .financ-news-home-boxes .bitcoin-news-image-box .bitcoin-img-info-text h6{
+    font-size: 10px;
+  }
+  /* ============================ ARTICLE PAGE RESPONSIVE WORK END ============================ */
 }
 
 /* ============= For Mobile View ===========================*/
@@ -1308,6 +1361,82 @@
   .mobile-view-navigation-sec-coinrise .mobile-view-menus-inner #menu-mobile-menu {
     width: 100% !important;
   }
+
+
+  /* ============================ ARTICLE PAGE RESPONSIVE WORK START ============================ */
+  .article-banner-section-main .article-banner-left-box{
+    gap: 12px;
+  }
+  .article-banner-section-main .article-banner-left-box .article-banner-left-box-heading{
+    border-bottom: 0;
+  }
+  .article-banner-section-main .article-banner-left-box .article-banner-left-box-heading>a {
+    font-size: 22px;
+    line-height: 28px;
+    max-width: 100%;
+  }
+
+  .article-banner-section-main .article-banner-left-right-container,
+  .article-banner-section-main .article-box-left-top-heading-collapse {
+    flex-direction: column-reverse;
+  }
+  .article-banner-section-main .article-banner-right-head .home-banner-slider .home-banner-right-content-box{
+    padding: 0;
+    margin-bottom: 30px;
+    /* flex-direction: row; */
+  }
+  .article-banner-section-main .article-banner-right-head .home-banner-slider .home-banner-right-content-box .right-content-home-box .right-banner-content-bitcoin-text{
+    max-width: 100% !important;
+  }
+  .article-banner-section-main .article-banner-right-head .home-banner-slider .home-banner-right-content-box .right-content-home-box p{
+    max-width: 100% !important;
+  }
+  .article-banner-section-main .article-banner-left-box .article-category-posting-details {
+    align-items: start;
+    justify-content: start;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #D9D9D9;
+  }
+  .article-banner-section-main .article-box-left-top-heading-collapse{
+    gap: 17px;
+  }
+  .article-banner-section-main .article-banner-big-image-box a img{
+    height: 224px;
+}
+  .article-banner-section-main .article-box-left-top-heading-collapse .article-banner-big-image-box .crypto-black-mobile {
+    display: block;
+    margin-top: 30px;
+  }
+
+  .article-banner-section-main .article-banner-left-right-container .article-box-left-top-heading-collapse .article-banner-left-box .article-category-posting-details .crypto-black {
+    display: none;
+  }
+  .article-banner-section-main .article-banner-left-box .article-category-posting-details .article-category-post-name{
+    margin-left: 0;
+    gap: 7px;
+    margin-right: 12px;
+    padding-right: 12px;
+  }
+  .social-icon-article-page-box{
+    gap: 28px;
+  }
+  .social-icon-article-page-box a img{
+    height: 18px;
+    width: 100%;
+  }
+  .article-blog-text-ads-sec-main .right-article-section-ads-box{
+    margin-top: 30px;
+  }
+  .article-blog-text-ads-sec-main .right-article-section-ads-box a{
+    padding: 30px;
+    background-color: #f2f2f2;
+    border: transparent;
+  }
+  .footer-ads-sec{
+    margin: 0;
+    margin-top: -55px;
+  }
+  /* ============================ ARTICLE PAGE RESPONSIVE WORK END ============================ */
 
 }
 
